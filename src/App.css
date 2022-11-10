@@ -1,0 +1,276 @@
+.App {
+  text-align: center;
+}
+
+.homepage-content, .lrPage, .mainContentDiv, .requestPage {
+  min-height: calc(100vh - 155px);
+}
+
+.page-header, .page-content {
+  margin: 0;
+}
+
+.g-header, .footer-list-1, .footer-list-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  margin: 0px;
+  padding: 16px 50px;
+  position: sticky;
+  top: 0px;
+  border-bottom: 1px solid black;
+  background: white;
+}
+
+.g-header {
+  padding: 0 50px;
+  max-height: 4.5rem;
+  z-index: +1;
+}
+
+.main-logo {
+  height: 73px;
+  width: 73px;
+}
+
+hr{
+  margin: 0px;
+}
+
+.header-list{
+  text-decoration: none;
+}
+
+/* .homepage-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+} */
+
+.first-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.left{
+  /* width: 40%; */
+  width: 35%;
+  padding: 25px 0 0 0;
+}
+
+.donate-buttons{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.donate-button {
+  position: static !important;
+}
+
+.right{
+  /* width: 40%; */
+  width: 35%;
+}
+
+.image1{
+  width: 100%;
+  height: 300px;
+}
+
+.second-div, .third-div, .forth-div{
+  width: 75%;
+  margin: 0 auto;
+}
+
+.third-div-content {
+  display: flex;
+  align-items: baseline;
+  gap: 25px;
+}
+
+.howWeWorkNumber {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%; 
+  background: rgb(155, 187, 246);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.75rem;
+  color: white;
+  margin: 0;
+}
+
+.content-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 20%;
+}
+
+/* .iconarrow {
+  position: static;
+} */
+
+.howWeWorkMsg {
+  margin-top: 0px;
+}
+
+.warehouse{
+  text-align: left;
+}
+
+.locationLinks {
+  text-decoration: none;
+}
+
+.lr-switch-words:hover, .locationLinks:hover{
+  text-decoration: underline;
+}
+
+.g-footer{
+  background: grey;
+  color : white;
+  padding: 5px 0;
+}
+
+.footer-list-1, .footer-list-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0 50px;
+  background: transparent;
+  border-bottom: none;
+}
+
+.footer-list{
+  text-decoration: none;
+  color: white;
+}
+
+.footer-lastLine{
+  margin: 0;
+}
+
+/* .lrPage{
+  min-height: calc(100vh - 171.2px);
+  padding-bottom: 10px;
+} */
+
+.lrHeading{
+  margin: 0;
+}
+
+.lrHeading-2{
+  margin: 0 0 10px 0;
+}
+
+.login-content, .registration-content{
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 0 35%;
+  width: 30%;
+  background: white;
+  padding: 10px 0;
+}
+
+.errorLoginMsg{
+  color: red;
+  font-weight: bold;
+}
+
+.lrLastLine{
+  margin: 0;
+}
+
+.lr-switch-words{
+  color: blue;
+}
+
+.lr-switch-words:hover, .locationLinks:hover{
+  text-decoration: underline;
+}
+
+/* media queries :- */
+
+@media(min-width: 2000px) {
+  .homepage-content, .mainContentDiv {
+    min-height: calc(100vh - 176px);
+  }
+}
+
+@media(max-width: 1024px) {
+  .login-content, .registration-content{
+    margin: 0 25%;
+    width: 50%;
+  }
+}
+
+@media(max-width: 768px) {
+  .homepage-heading{
+    margin-bottom: 0;
+  }
+
+  .first-div{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .left{
+    width: 75%;
+    padding: 0 0 20px 0;
+    margin-bottom: 20px;
+  }
+  
+  .right{
+    width: 75%;
+  }
+
+  .login-content, .registration-content{
+    margin: 0 12.5%;
+    width: 75%;
+  }
+
+  .third-div-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .content-div {
+    width: 100%;
+  }
+
+  .arrow {
+    transform: rotate(90deg);
+    z-index: -1;
+  }
+}
+
+@media(max-width: 426px) {
+  .donate-buttons{
+    gap: 20px;
+  }
+
+  .image1{
+    height: 200px;
+  }
+
+  .login-content, .registration-content{
+    margin: 0 5%;
+    width: 90%;
+  }
+}
+
+@media(max-width: 376px) {
+  .donate-buttons{
+    gap: 12px;
+  }
+}
